@@ -1,0 +1,14 @@
+C:\Users\CoryC\Documents\Visual Studio 2013\Projects\Encon\Encon\bin\Release\Encon.exe.config
+C:\Users\CoryC\Documents\Visual Studio 2013\Projects\Encon\Encon\bin\Release\Encon.exe.manifest
+C:\Users\CoryC\Documents\Visual Studio 2013\Projects\Encon\Encon\bin\Release\Encon.application
+C:\Users\CoryC\Documents\Visual Studio 2013\Projects\Encon\Encon\bin\Release\Encon.exe
+C:\Users\CoryC\Documents\Visual Studio 2013\Projects\Encon\Encon\bin\Release\Encon.pdb
+C:\Users\CoryC\Documents\Visual Studio 2013\Projects\Encon\Encon\obj\Release\Encon.Form1.resources
+C:\Users\CoryC\Documents\Visual Studio 2013\Projects\Encon\Encon\obj\Release\Encon.Properties.Resources.resources
+C:\Users\CoryC\Documents\Visual Studio 2013\Projects\Encon\Encon\obj\Release\Encon.csproj.GenerateResource.Cache
+C:\Users\CoryC\Documents\Visual Studio 2013\Projects\Encon\Encon\obj\Release\Encon.exe.manifest
+C:\Users\CoryC\Documents\Visual Studio 2013\Projects\Encon\Encon\obj\Release\Encon.application
+C:\Users\CoryC\Documents\Visual Studio 2013\Projects\Encon\Encon\obj\Release\Encon.exe
+C:\Users\CoryC\Documents\Visual Studio 2013\Projects\Encon\Encon\obj\Release\Encon.pdb
+C:\Users\CoryC\Documents\Visual Studio 2013\Projects\Encon\Encon\obj\Release\Encon.csprojResolveAssemblyReference.cache
+C:\Users\CoryC\documents\visual studio 2013\Projects\Encon\Encon\obj\Release\Encon.Form2.resources
