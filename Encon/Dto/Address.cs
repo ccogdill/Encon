@@ -19,7 +19,7 @@ namespace Encon.Dto
         public string Address2 { get; set; }
         public string Address3 { get; set; }
         public string City { get; set; }
-        public string State { get; set; }
+        public State State { get; set; }
         public string Zip { get; set; }
         public Boolean CurrentAddress { get; set; }
     }
