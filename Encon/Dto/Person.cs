@@ -8,6 +8,7 @@ namespace Encon.Dto
 {
     public class Person
     {
+        public int ID { get; set; }
         public string Name { get; set; }
         public string SSN { get; set; }
         public int Age { get; set; }
