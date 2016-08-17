@@ -16,7 +16,7 @@ namespace Encon
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form22());
+            Application.Run(new Lottery());
         }
     }
 }

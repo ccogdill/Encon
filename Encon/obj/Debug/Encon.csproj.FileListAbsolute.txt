@@ -30,3 +30,4 @@ C:\Users\ccogdill\Documents\Encon\Encon\obj\Debug\Encon.AutomapperTest.resources
 C:\Users\ccogdill\Documents\Encon\Encon\bin\Debug\AutoMapper.Net4.dll
 C:\Users\ccogdill\Documents\Encon\Encon\bin\Debug\AutoMapper.dll
 C:\Users\ccogdill\Documents\Encon\Encon\bin\Debug\AutoMapper.xml
+C:\Users\ccogdill\Documents\Encon\Encon\obj\Debug\Encon.Lottery.resources

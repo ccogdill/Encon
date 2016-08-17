@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Encon.exe" size="31176">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Encon.exe" size="32200">
       <assemblyIdentity name="Encon" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>shYhje6kGSE53C39imo/C/jLTtbDW8/W346e0NOd05M=</dsig:DigestValue>
+        <dsig:DigestValue>Xch3f9tTZrPpXPoUGQL2+948JumimOxBszpfYfb91es=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
