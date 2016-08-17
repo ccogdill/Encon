@@ -19,7 +19,7 @@ namespace Encon
         public AutomapperTest()
         {
             InitializeComponent();
-        }
+        } 
 
 
         Person p;
@@ -55,17 +55,9 @@ namespace Encon
 
         private void button3_Click(object sender, EventArgs e)
         {
-
             Mapper.CreateMap<Person, View.MailingAddress>();
-           
-
           //  List<View.MailingAddress> people = Mapper.Map<List<Person>, List<View.MailingAddress>>(p);
-
             var model  = Mapper.Map<Person, View.MailingAddress>(p);
-          
-
-
-
         }
 
 
