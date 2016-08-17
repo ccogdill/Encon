@@ -16,11 +16,7 @@ namespace Encon
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
-            Application.Run(new Lottery());
-=======
             Application.Run(new AutomapperTest());
->>>>>>> cleanup
         }
     }
 }
