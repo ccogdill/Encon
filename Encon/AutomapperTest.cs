@@ -51,7 +51,6 @@ namespace Encon
 
             var model = Mapper.Map<Person, View.MailingAddress>(p);
             model = Mapper.Map<Address, View.MailingAddress>(CurrentAddress, model);
-
         }
 
         private void button3_Click(object sender, EventArgs e)
