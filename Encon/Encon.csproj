@@ -100,6 +100,7 @@
     </Compile>
     <Compile Include="Dto\Address.cs" />
     <Compile Include="Dto\Person.cs" />
+    <Compile Include="Dto\State.cs" />
     <Compile Include="Form22.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +116,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="View\MailingAddress.cs" />
+    <Compile Include="View\States.cs" />
     <EmbeddedResource Include="AutomapperTest.resx">
       <DependentUpon>AutomapperTest.cs</DependentUpon>
     </EmbeddedResource>
