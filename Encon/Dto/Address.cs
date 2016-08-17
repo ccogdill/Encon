@@ -13,7 +13,8 @@ namespace Encon.Dto
         //   A person or business can also have multiple addresses.
         //   Just as an address can have multiple phones.  
 
-        public int AddressID { get; set; }
+        
+        public int ID { get; set; }
         public string Address1 { get; set; }
         public string Address2 { get; set; }
         public string Address3 { get; set; }
