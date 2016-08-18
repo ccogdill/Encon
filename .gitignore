@@ -1,0 +1,11 @@
+*/bin/
+packages/
+*/obj/
+*.suo
+*/PublishProfiles/
+*.pubxml
+
+packages/
+!packages/repositories.config
+.nuget/NuGet.exe
+*.data

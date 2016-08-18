@@ -117,6 +117,30 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AutoMapper.dll" size="150016">
+      <assemblyIdentity name="AutoMapper" version="3.2.1.0" publicKeyToken="BE96CD2C38EF1005" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>bcKt9itFfab1T/hsMTA7D+Ja9afAVpvtL1G8tEzvJo0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AutoMapper.Net4.dll" size="28672">
+      <assemblyIdentity name="AutoMapper.Net4" version="3.2.1.0" publicKeyToken="BE96CD2C38EF1005" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>FyhNgj1tX8AFeOifFdaBfAlVLTWy6YmixbTSyR3gTYY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="de\DevExpress.Data.v16.1.resources.dll" size="181032">
       <assemblyIdentity name="DevExpress.Data.v16.1.resources" version="16.1.0.0" publicKeyToken="B88D1754D700E49A" language="de" processorArchitecture="msil" />
       <hash>
@@ -645,17 +669,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Encon.exe" size="27648">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Encon.exe" size="33280">
       <assemblyIdentity name="Encon" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tY6JdQ6YLW0K9Qhj00SfyBCS8ICDOvVUvGcc3I5MXeU=</dsig:DigestValue>
+        <dsig:DigestValue>MFSywUwX0hNP1+b/mj5Wwcw4A59LDdrV/iUFZRZ16lo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="AutoMapper.Net4.dll" size="28672">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FyhNgj1tX8AFeOifFdaBfAlVLTWy6YmixbTSyR3gTYY=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Encon.exe.config" size="187">
     <hash>
       <dsig:Transforms>
