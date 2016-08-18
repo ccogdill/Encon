@@ -14,14 +14,14 @@
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Encon.exe.manifest" size="6514">
+    <dependentAssembly dependencyType="install" codebase="Encon.exe.manifest" size="43010">
       <assemblyIdentity name="Encon.exe" version="1.0.0.9" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>qbcV7VWohpj+y/jdXGAlDQ0n0vhFdzjOKAZaN520rQc=</dsig:DigestValue>
+        <dsig:DigestValue>NtxU9+vSIC3G9w/GQ5my1hgmEsHRtauns79C7cmzJO0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

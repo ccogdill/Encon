@@ -1,33 +1,20 @@
-c:\users\coryc\documents\visual studio 2013\Projects\Encon\Encon\bin\Debug\Encon.exe.config
-c:\users\coryc\documents\visual studio 2013\Projects\Encon\Encon\bin\Debug\Encon.exe
-c:\users\coryc\documents\visual studio 2013\Projects\Encon\Encon\bin\Debug\Encon.pdb
-c:\users\coryc\documents\visual studio 2013\Projects\Encon\Encon\obj\Debug\Encon.csprojResolveAssemblyReference.cache
-c:\users\coryc\documents\visual studio 2013\Projects\Encon\Encon\obj\Debug\Encon.Form1.resources
-c:\users\coryc\documents\visual studio 2013\Projects\Encon\Encon\obj\Debug\Encon.Properties.Resources.resources
-c:\users\coryc\documents\visual studio 2013\Projects\Encon\Encon\obj\Debug\Encon.csproj.GenerateResource.Cache
-c:\users\coryc\documents\visual studio 2013\Projects\Encon\Encon\obj\Debug\Encon.exe
-c:\users\coryc\documents\visual studio 2013\Projects\Encon\Encon\obj\Debug\Encon.pdb
-C:\Users\CoryC\Documents\Visual Studio 2013\Projects\Encon\Encon\bin\Debug\Encon.exe.manifest
-C:\Users\CoryC\Documents\Visual Studio 2013\Projects\Encon\Encon\bin\Debug\Encon.application
-C:\Users\CoryC\Documents\Visual Studio 2013\Projects\Encon\Encon\obj\Debug\Encon.exe.manifest
-C:\Users\CoryC\Documents\Visual Studio 2013\Projects\Encon\Encon\obj\Debug\Encon.application
-C:\Users\ccogdill\Documents\Encon\Encon\bin\Debug\Encon.exe.config
-C:\Users\ccogdill\Documents\Encon\Encon\obj\Debug\Encon.csprojResolveAssemblyReference.cache
-C:\Users\ccogdill\Documents\Encon\Encon\obj\Debug\Encon.Form22.resources
-C:\Users\ccogdill\Documents\Encon\Encon\obj\Debug\Encon.Form1.resources
-C:\Users\ccogdill\Documents\Encon\Encon\obj\Debug\Encon.Properties.Resources.resources
-C:\Users\ccogdill\Documents\Encon\Encon\obj\Debug\Encon.csproj.GenerateResource.Cache
-C:\Users\ccogdill\Documents\Encon\Encon\bin\Debug\Encon.exe.manifest
-C:\Users\ccogdill\Documents\Encon\Encon\bin\Debug\Encon.application
-C:\Users\ccogdill\Documents\Encon\Encon\bin\Debug\Encon.exe
-C:\Users\ccogdill\Documents\Encon\Encon\bin\Debug\Encon.pdb
-C:\Users\ccogdill\Documents\Encon\Encon\obj\Debug\Encon.TrustInfo.xml
-C:\Users\ccogdill\Documents\Encon\Encon\obj\Debug\Encon.exe.manifest
-C:\Users\ccogdill\Documents\Encon\Encon\obj\Debug\Encon.application
-C:\Users\ccogdill\Documents\Encon\Encon\obj\Debug\Encon.exe
-C:\Users\ccogdill\Documents\Encon\Encon\obj\Debug\Encon.pdb
-C:\Users\ccogdill\Documents\Encon\Encon\obj\Debug\Encon.AutomapperTest.resources
-C:\Users\ccogdill\Documents\Encon\Encon\bin\Debug\AutoMapper.Net4.dll
-C:\Users\ccogdill\Documents\Encon\Encon\bin\Debug\AutoMapper.dll
-C:\Users\ccogdill\Documents\Encon\Encon\bin\Debug\AutoMapper.xml
-C:\Users\ccogdill\Documents\Encon\Encon\obj\Debug\Encon.Lottery.resources
+C:\Users\Cory\Documents\Encon\Encon\bin\Debug\AutoMapper.Net4.dll
+C:\Users\Cory\Documents\Encon\Encon\bin\Debug\Encon.exe.config
+C:\Users\Cory\Documents\Encon\Encon\bin\Debug\Encon.exe.manifest
+C:\Users\Cory\Documents\Encon\Encon\bin\Debug\Encon.application
+C:\Users\Cory\Documents\Encon\Encon\bin\Debug\Encon.exe
+C:\Users\Cory\Documents\Encon\Encon\bin\Debug\Encon.pdb
+C:\Users\Cory\Documents\Encon\Encon\bin\Debug\AutoMapper.dll
+C:\Users\Cory\Documents\Encon\Encon\bin\Debug\AutoMapper.xml
+C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.csprojResolveAssemblyReference.cache
+C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.AutomapperTest.resources
+C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.Form22.resources
+C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.Form1.resources
+C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.Lottery.resources
+C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.Properties.Resources.resources
+C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.csproj.GenerateResource.Cache
+C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.TrustInfo.xml
+C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.exe.manifest
+C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.application
+C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.exe
+C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.pdb
