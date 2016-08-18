@@ -8,8 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
-using System.IO;
-
+using DevExpress.Data;
+using DevExpress.Docs;
+using DevExpress.Office;
+using DevExpress.Spreadsheet; 
 
 namespace Encon
 {
@@ -88,7 +90,12 @@ namespace Encon
 
         private void buttonGenerate_Click(object sender, EventArgs e)
         {
-            validateFolderPath(FolderPath);
+            //  validateFolderPath(FolderPath);
+            if(string.IsNullOrEmpty(comboBox1.Text))
+            {
+                MessageBox.Show("Select a file type or else.");
+                return;
+            }
 
             progressBar1.Minimum = 0;
             progressBar1.Maximum = 100;
@@ -103,23 +110,17 @@ namespace Encon
             }
         }
 
-        private void DumpFile(ref int filenumber, string contents)
-        {
-            filenumber++;
+        //private void DumpFile(ref int filenumber, string contents)
+        //{
+        //    filenumber++;
 
-            string myPath = Path.Combine(FolderPath, FileName + filenumber.ToString() + ".csv");
+        //    string myPath = Path.Combine(FolderPath, FileName + filenumber.ToString() + ".csv");
 
-            File.WriteAllText(myPath, contents.ToString());
-        }
+        //    File.WriteAllText(myPath, contents.ToString());
+        //}
 
 
-        private void validateFolderPath(string path)
-        {
-            if (!Directory.Exists(path))
-            {
-                Directory.CreateDirectory(path);
-            }
-        }
+        
 
 
         private void buttonFolderPicker_Click(object sender, EventArgs e)
@@ -132,7 +133,7 @@ namespace Encon
             else
             {
                 string filepath = @"C:\Encon";    // Default path.
-                validateFolderPath(filepath);
+                //validateFolderPath(filepath);
                 FolderPath = filepath;
             }
         }
@@ -143,15 +144,21 @@ namespace Encon
             int processd = 0;
             int filenumber = 0;
 
-            StringBuilder csv = new StringBuilder();
+
+
+            string myPath = System.IO.Path.Combine(FolderPath, FileName + filenumber.ToString() + ".csv");
+            IDocument doc = new CsvDocument(myPath);
 
             // Add the header info to the CSV file.
-            csv.Append(CreateHeader());
-
+            doc.Write(CreateHeader());
 
             // Loop until the end.
             for (long i = 0; i < TotalRows; i++)
             {
+
+               
+
+
                 for (int d = 0; d < Down; d++)
                 {
                     for (int a = 0; a < Across; a++)
@@ -162,19 +169,27 @@ namespace Encon
 
                         if (ckIncludeHumanReadable.Checked)
                         {
-                            csv.AppendFormat("{0},", hr);
+                            doc.Write(string.Format("{1}{0}{1},", hr, '"'));
                         }
-                        csv.AppendFormat("{0},", bc);
+                        doc.Write(string.Format("{1}{0}{1},", bc, '"'));
                         processd++;
 
                     }
-                    csv.AppendFormat("{0}", Environment.NewLine);
+                    doc.Write(string.Format("{0}", Environment.NewLine));
                     rowcount++;
 
                     if (rowcount % Rows == 0)
                     {
-                        // Write it out to a file.                       
-                        DumpFile(ref filenumber, csv.ToString());
+                        // Write it out to a file.                                               
+                        doc.Save();
+
+                        filenumber++;
+                        myPath = System.IO.Path.Combine(FolderPath, FileName + filenumber.ToString() + ".csv");
+                        doc = new CsvDocument(myPath);
+
+                        // Add the header info to the CSV file.
+                        doc.Write(CreateHeader());
+                        
 
                         // Check progress
                         if (worker.CancellationPending)
@@ -198,18 +213,11 @@ namespace Encon
                         }
 
                         worker.ReportProgress(progressPercent);
-                        // Prep for the next file.
-                        csv.Clear();
-                        csv.Append(CreateHeader());
+                        
                     }
                 }
-
-                //if (processd > TotalRows)
-                //{
-                //    // Write it out to a file.                       
-                //    DumpFile(ref filenumber, csv.ToString());
-                //    return;
-                //}
+               
+             
             }
         }
 
@@ -344,6 +352,8 @@ namespace Encon
         {
 
         }
+
+       
 
 
 
