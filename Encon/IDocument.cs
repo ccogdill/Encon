@@ -8,7 +8,7 @@ namespace Encon
 {
     public interface IDocument
     {
-        
+        string Extension { get; }
         void Write(string value);
         void Save();
     }

@@ -68,23 +68,22 @@ namespace Encon
         }
 
 
-        private string CreateHeader()
+        private void CreateHeader(ref IDocument document)
         {
-            string header = "";
-
             for (int i = 0; i < Across; i++)
             {
                 if (ckIncludeHumanReadable.Checked)
                 {
-                    header += string.Format("ReadableRow{0},Barcode{0},", i + 1);
+                    document.Write(string.Format("ReadableRow{0}", i + 1));
+                    document.Write(string.Format("Barcode{0}", i + 1));
                 }
                 else
                 {
-                    header += string.Format("Row{0},", i + 1);
+                    document.Write(string.Format("Row{0}", i + 1)); 
                 }
+                
             }
-
-            return header += Environment.NewLine;
+            document .Write(string.Format("{0}", Environment.NewLine));
         }
 
 
@@ -110,15 +109,6 @@ namespace Encon
             }
         }
 
-        //private void DumpFile(ref int filenumber, string contents)
-        //{
-        //    filenumber++;
-
-        //    string myPath = Path.Combine(FolderPath, FileName + filenumber.ToString() + ".csv");
-
-        //    File.WriteAllText(myPath, contents.ToString());
-        //}
-
 
         
 
@@ -126,14 +116,12 @@ namespace Encon
         private void buttonFolderPicker_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog fbd = new FolderBrowserDialog();
-            //fbd.Description = "Custom Description"; //not mandatory
 
             if (fbd.ShowDialog() == DialogResult.OK)
                 FolderPath = fbd.SelectedPath;
             else
             {
                 string filepath = @"C:\Encon";    // Default path.
-                //validateFolderPath(filepath);
                 FolderPath = filepath;
             }
         }
@@ -145,12 +133,23 @@ namespace Encon
             int filenumber = 0;
 
 
+            IDocument doc;
 
-            string myPath = System.IO.Path.Combine(FolderPath, FileName + filenumber.ToString() + ".csv");
-            IDocument doc = new CsvDocument(myPath);
+            string ext = string.Empty;
+            if (comboBox1.InvokeRequired)
+            {
+                comboBox1.Invoke(new MethodInvoker(delegate { ext = comboBox1.Text; }));
+            }
+
+
+
+            if (ext == "CSV")
+                doc = new CsvDocument(FolderPath, FileName + filenumber.ToString());
+            else
+                doc = new ExcelDocument(FolderPath, FileName + filenumber.ToString());
 
             // Add the header info to the CSV file.
-            doc.Write(CreateHeader());
+            CreateHeader(ref doc);
 
             // Loop until the end.
             for (long i = 0; i < TotalRows; i++)
@@ -169,9 +168,9 @@ namespace Encon
 
                         if (ckIncludeHumanReadable.Checked)
                         {
-                            doc.Write(string.Format("{1}{0}{1},", hr, '"'));
+                            doc.Write(string.Format("{0}", hr));
                         }
-                        doc.Write(string.Format("{1}{0}{1},", bc, '"'));
+                        doc.Write(string.Format("{0}", bc));
                         processd++;
 
                     }
@@ -184,11 +183,14 @@ namespace Encon
                         doc.Save();
 
                         filenumber++;
-                        myPath = System.IO.Path.Combine(FolderPath, FileName + filenumber.ToString() + ".csv");
-                        doc = new CsvDocument(myPath);
+                        
+                        if (ext == "CSV")
+                            doc = new CsvDocument(FolderPath, FileName + filenumber.ToString());
+                        else
+                            doc = new ExcelDocument(FolderPath, FileName + filenumber.ToString());
 
                         // Add the header info to the CSV file.
-                        doc.Write(CreateHeader());
+                        CreateHeader(ref doc);
                         
 
                         // Check progress
@@ -251,33 +253,20 @@ namespace Encon
             }
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void textBoxStartingPoint_TextChanged(object sender, EventArgs e)
         {
             textboxTestStartingNumber.Text = textBoxStartingPoint.Text;
         }
-
-
-
         private void textboxBarcodeMask_TextChanged(object sender, EventArgs e)
         {
             textboxTestBarcodeMask.Text = textboxBarcodeMask.Text;
         }
-
         private void textboxHumanMask_TextChanged(object sender, EventArgs e)
         {
             textboxTestHumanMask.Text = textboxHumanMask.Text;
         }
-
         private void buttonDown_Click(object sender, EventArgs e)
         {
             long workingValue = long.Parse(textboxTestStartingNumber.Text) - 1;
@@ -299,31 +288,12 @@ namespace Encon
             textboxTestBarcodeMask.Text = val2;
             textboxTestHumanMask.Text = val;
         }
-
-
-
-
-        //{
-        //        string mask = "F0000-B000-R0000";
-        //        int startingPoint = 96001;
-
-        //        string mystring = MaskIntField(mask, startingPoint);
-
-        //        Console.WriteLine(mystring);
-        //        Console.WriteLine("Press any key to exit.");
-        //        Console.ReadLine();
-        //}
-
-
-
         public static string Reverse(string s)
         {
             char[] charArray = s.ToCharArray();
             Array.Reverse(charArray);
             return new string(charArray);
         }
-
-
         public static string MaskIntField(string Mask, long Value)
         {
             string value = Value.ToString();

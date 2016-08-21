@@ -293,7 +293,6 @@
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Test";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // textboxTestHumanMask
             // 
@@ -386,7 +385,6 @@
             this.Controls.Add(this.buttonGenerate);
             this.Name = "Form22";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

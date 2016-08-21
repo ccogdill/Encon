@@ -12,26 +12,45 @@ namespace Encon
     {
 
         Workbook book;
-        string filename = string.Empty;
-        
+        string filename;
+        int x = 0;
+        int y = 0;
 
-        public ExcelDocument(string Filename)
+        public string Extension
+        {
+            get { return ".xls"; }
+        }
+
+        public ExcelDocument(string Path, string Filename)
         {
             book = new Workbook();
-            filename = Filename;
+            filename = System.IO.Path.Combine(Path, Filename + Extension);
+            base.ValidateFolderPath(filename);
         }
 
       
 
         void IDocument.Write(string value)
         {
-            book.Worksheets[0].Cells["B2"].Value = "Hello World";
-            book.Worksheets[0].Cells[2, 3].Value = "Skiddle, Hop";
+            if(value != Environment.NewLine)
+            {
+                Cell current = book.Worksheets[0].Cells[y,x];
+                current.Value = "'" + value;  // this is crap!
+                
+                x++;
+            }
+            else
+            { 
+                x = 0; 
+                y++; 
+            }
         }
 
         void IDocument.Save()
         {
-            book.SaveDocument(filename); 
+            book.SaveDocument(filename);
+            x = 0;
+            y = 0;
         }
     }
 }

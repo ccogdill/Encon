@@ -10,7 +10,6 @@ C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.csprojResolveAssemblyReferen
 C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.AutomapperTest.resources
 C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.Form22.resources
 C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.Form1.resources
-C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.Lottery.resources
 C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.Properties.Resources.resources
 C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.csproj.GenerateResource.Cache
 C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.TrustInfo.xml

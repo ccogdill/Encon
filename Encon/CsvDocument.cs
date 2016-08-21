@@ -13,17 +13,25 @@ namespace Encon
         StringBuilder csv;
         string filename;
 
-        public CsvDocument(string Filename)
+        public string Extension
+        {
+            get { return "csv"; }
+        }
+
+        public CsvDocument(string Path , string Filename)
         {
             csv = new StringBuilder();
-            base.ValidateFolderPath(Filename);
-            filename = Filename;
+            filename = System.IO.Path.Combine(Path, Filename + Extension);
+            base.ValidateFolderPath(filename);
         }
 
 
         void IDocument.Write(string value)
         {
-            csv.Append(value);
+            if (value != Environment.NewLine)
+                csv.Append(value + ",");
+            else
+                csv.AppendLine(); 
         }
 
         void IDocument.Save()
