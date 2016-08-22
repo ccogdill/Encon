@@ -35,8 +35,8 @@ namespace Encon
             if(value != Environment.NewLine)
             {
                 Cell current = book.Worksheets[0].Cells[y,x];
-                current.Value = "'" + value;  // this is crap!
-                
+                current.Value = value;  
+                current.NumberFormat = "@";// Undocumented, sets the Number format category to Text
                 x++;
             }
             else
