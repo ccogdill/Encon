@@ -19,3 +19,5 @@ C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.application
 C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.exe
 C:\Users\Cory\Documents\Encon\Encon\obj\Debug\Encon.pdb
 C:\Users\ccogdill\Documents\Encon\Encon\bin\Debug\Encon.exe.config
+C:\Users\ccogdill\Documents\Encon\Encon\obj\Debug\Encon.exe
+C:\Users\ccogdill\Documents\Encon\Encon\obj\Debug\Encon.pdb
